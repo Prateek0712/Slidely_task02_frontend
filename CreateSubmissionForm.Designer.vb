@@ -27,7 +27,6 @@ Partial Class CreateSubmissionForm
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        Label5 = New Label()
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
@@ -35,6 +34,7 @@ Partial Class CreateSubmissionForm
         Button1 = New Button()
         Label6 = New Label()
         Timer1 = New Timer(components)
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -72,15 +72,6 @@ Partial Class CreateSubmissionForm
         Label4.Size = New Size(77, 15)
         Label4.TabIndex = 3
         Label4.Text = "Github  Link :"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(218, 262)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(69, 15)
-        Label5.TabIndex = 4
-        Label5.Text = "Stopwatch :"
         ' 
         ' TextBox1
         ' 
@@ -123,9 +114,9 @@ Partial Class CreateSubmissionForm
         ' 
         Label6.BackColor = SystemColors.ControlLightLight
         Label6.BorderStyle = BorderStyle.FixedSingle
-        Label6.Location = New Point(335, 261)
+        Label6.Location = New Point(426, 261)
         Label6.Name = "Label6"
-        Label6.Size = New Size(303, 20)
+        Label6.Size = New Size(212, 20)
         Label6.TabIndex = 10
         Label6.Text = "00:00:00"
         Label6.TextAlign = ContentAlignment.MiddleCenter
@@ -133,18 +124,27 @@ Partial Class CreateSubmissionForm
         ' Timer1
         ' 
         ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(218, 258)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(187, 27)
+        Button2.TabIndex = 11
+        Button2.Text = "Toggle Stopwatch (ctrl+T)"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' CreateSubmissionForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button2)
         Controls.Add(Label6)
         Controls.Add(Button1)
         Controls.Add(TextBox4)
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(TextBox1)
-        Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -159,7 +159,6 @@ Partial Class CreateSubmissionForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
@@ -167,4 +166,5 @@ Partial Class CreateSubmissionForm
     Friend WithEvents Button1 As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Button2 As Button
 End Class

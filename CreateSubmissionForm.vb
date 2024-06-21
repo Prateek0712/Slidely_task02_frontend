@@ -6,7 +6,8 @@ Public Class CreateSubmissionForm
     Dim ss, mm, hh As Integer
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Timer1.Enabled = False
+
+        'Timer1.Enabled = False
         Dim uname As String = TextBox1.Text
         Dim uemail As String = TextBox2.Text
         Dim uphone As String = TextBox3.Text
@@ -34,16 +35,13 @@ Public Class CreateSubmissionForm
             TextBox2.Text = ""
             TextBox3.Text = ""
             TextBox4.Text = ""
-            Label6.Text = "00:00:00"
-            ss = 0
-            hh = 0
-            mm = 0
+
             Dim responseContent As String = response.Content.ReadAsStringAsync().Result
             MessageBox.Show(responseContent)
-            Timer1.Enabled = True
+
         Else
             MessageBox.Show("Error: " & response.StatusCode.ToString())
-            Timer1.Enabled = True
+
         End If
     End Sub
 
@@ -63,14 +61,35 @@ Public Class CreateSubmissionForm
     End Sub
 
     Private Sub CreateSubmissionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Enabled = True
+        'Timer1.Enabled = True
         Me.KeyPreview = True
         Button1.BackColor = Color.FromArgb(254, 236, 152)
+        Button2.BackColor = Color.FromArgb(254, 236, 152)
+
     End Sub
     'event for handling shortcut
     Private Sub CreateSubmissionForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If e.Control AndAlso e.KeyCode = Keys.S Then
             Button1.PerformClick()
+        End If
+        If e.Control AndAlso e.KeyCode = Keys.T Then
+            Button2.PerformClick()
+        End If
+    End Sub
+
+    'Private Sub Label5_Click(sender As Object, e As EventArgs)
+    'If Timer1.Enabled Then
+    '      Timer1.Enabled = False
+    'Else
+    '     Timer1.Enabled = True
+    'End If
+    'End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If Timer1.Enabled Then
+            Timer1.Enabled = False
+        Else
+            Timer1.Enabled = True
         End If
     End Sub
 End Class
