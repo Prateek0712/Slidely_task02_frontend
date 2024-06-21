@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("slidely_task02_frontend"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83ac6c0e92154864928e0834195f926b2ba97763"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1f69831a6f453f3a9656e86c6844f6acb91fdec"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("slidely_task02_frontend"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("slidely_task02_frontend"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
