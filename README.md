@@ -10,7 +10,8 @@ Before excuting, install following in you system
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
 ### Note - 
 1. Same button will be used as a toggle switch to resume and pauses the stop watch without setting it to  0.
-1st Page ( **Home Page**)
+
+1. 1st Page ( **Home Page**)
 ![image](./images/Window%20-%20Form1.png)
 
 2nd Page (**View Submission**)
